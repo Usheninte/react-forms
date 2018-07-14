@@ -15,7 +15,8 @@ class NameForm extends React.Component {
     });
   }
   handleSubmit(event) {
-
+    alert('This was submitted: ' + this.state.value);
+    event.preventDefault();
   }
   render() {
     return(
@@ -25,6 +26,7 @@ class NameForm extends React.Component {
           <input type="text" value={this.state.value} onChange={this.handleChange} />  
         </label>  
         <input type="submit" value="Submit" />
+        <h2>{this.state.value}</h2>
       </form>
     );
   }
