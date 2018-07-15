@@ -33,6 +33,10 @@ class NameForm extends React.Component {
 }
 
 ReactDOM.render(
-  <NameForm />,
+  <div>
+    <NameForm />
+    <br /><br /><br />
+    <h3><a href="https://github.com/Usheninte/react-ajax">View on Github</a></h3>
+  </div>,
   document.getElementById("app")
 );
